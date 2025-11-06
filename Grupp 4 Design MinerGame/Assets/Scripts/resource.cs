@@ -13,6 +13,8 @@ public class resource : MonoBehaviour
     [SerializeField] float MaxHealth = 100f;
 
 
+    [SerializeField] public float Value = 1f;
+
     SpriteRenderer spriteRenderer;
     private void Awake()
     {
@@ -62,11 +64,11 @@ public class resource : MonoBehaviour
         switch (healthPercent)
         {
             
-            case > 90f:
+            case > 95f:
                 spriteRenderer.sprite = sprite1;
                 break;
 
-            case > 50f and <= 90f:
+            case > 50f and <= 95f:
                 spriteRenderer.sprite = sprite2;
                 break;
             case > 25f and <= 50f:
