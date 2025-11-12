@@ -28,7 +28,7 @@ public class resource : MonoBehaviour
 
     private void Update()
     {
-        SpriteChoser();
+        SpriteChooser();
         HealthCalc();
     }
 
@@ -41,7 +41,7 @@ public class resource : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            DmgReciver();
+            DmgReciever();
             Debug.Log("Dmg");
             if (Health <= 0)
             {
@@ -51,13 +51,13 @@ public class resource : MonoBehaviour
     }
 
 
-    void DmgReciver()
+    void DmgReciever()
     {
         Health -= 5;
         Health = Mathf.Max(Health, 0);
     }
 
-    void SpriteChoser()
+    void SpriteChooser()
     {
         float healthPercent = HealthPercentage();
 

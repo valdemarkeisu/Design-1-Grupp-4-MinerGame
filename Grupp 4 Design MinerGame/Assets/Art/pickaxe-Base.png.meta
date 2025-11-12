@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d60ab35dd0ed8924982584831b7ee659
+guid: f1d56472a10a2f2439d93914e9eb6531
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1468749738494343667
-    second: Sten2_0
+      213: 7631631274477779077
+    second: pickaxe-Base_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -13,7 +13,7 @@ TextureImporter:
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
-    borderMipMap: 0
+    borderMipMap: 1
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.4501566, y: 0.5621886}
-  spritePixelsToUnits: 100
+  spritePivot: {x: 0.09737154, y: 0.09617688}
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sten2_0
+      name: pickaxe-Base_0
       rect:
         serializedVersion: 2
-        x: 831
-        y: 604
-        width: 62
-        height: 56
-      alignment: 9
-      pivot: {x: 0.5, y: 0.11}
+        x: 0
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d06c81505e3fd9be0800000000000000
-      internalID: -1468749738494343667
+      spriteID: 5887204c53009e960800000000000000
+      internalID: 7631631274477779077
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sten2_0: -1468749738494343667
+      pickaxe-Base_0: 7631631274477779077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
