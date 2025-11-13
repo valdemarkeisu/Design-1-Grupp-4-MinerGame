@@ -14,6 +14,7 @@ public class resource : MonoBehaviour
 
 
     [SerializeField] public float Value = 1f;
+    private GameObject circleAOE;
 
     SpriteRenderer spriteRenderer;
     private void Awake()
@@ -35,6 +36,17 @@ public class resource : MonoBehaviour
     private void FixedUpdate()
     {
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("CircleAOE"))
+        {
+            circleAOE = collision.gameObject;
+
+            Debug.Log("Touched me");
+            DmgReciever();
+        }
     }
 
     void HealthCalc()

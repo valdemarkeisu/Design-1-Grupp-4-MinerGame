@@ -53,6 +53,7 @@ MonoBehaviour:
   sprite4: {fileID: 6355527011539713790, guid: 416738f79aabcb74bb27bddc1897550b, type: 3}
   Health: 100
   MaxHealth: 100
+  Value: 1
 --- !u!114 &1742679470570543983
 MonoBehaviour:
   m_ObjectHideFlags: 0
