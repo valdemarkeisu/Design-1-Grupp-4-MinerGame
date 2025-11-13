@@ -46,6 +46,10 @@ public class resource : MonoBehaviour
 
             Debug.Log("Touched me");
             DmgReciever();
+            if (Health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
