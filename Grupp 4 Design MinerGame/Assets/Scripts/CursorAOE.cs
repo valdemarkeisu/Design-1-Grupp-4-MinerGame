@@ -21,7 +21,7 @@ public class CursorAOE : MonoBehaviour
 
             GameObject newCircle = Instantiate(circlePrefab, worldPos, Quaternion.identity);
 
-            Destroy(newCircle, 1f);
+            Destroy(newCircle, 0.1f);
         }
     }
 }
