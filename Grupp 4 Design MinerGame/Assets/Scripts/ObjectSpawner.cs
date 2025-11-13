@@ -6,7 +6,7 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject[] prefabs;           // assign 4 prefabs in Inspector
     public bool[] canSpawn = { true, false, false, false }; // only Buske true by default
 
-    public float spawnInterval = 3f;
+    public float spawnInterval = 6f;
     private float timer = 0f;
 
     // Safe spawn boundaries

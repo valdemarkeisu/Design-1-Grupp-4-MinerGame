@@ -1,8 +1,13 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
+
+    public TMP_Text Recourcetext;
+
+
 
     public int baseValue = 0;
     public bool Stone = false;
@@ -18,18 +23,26 @@ public class PlayerStats : MonoBehaviour
     public float spawnInterval = 3f;
     public int resourcesPerSpawn = 1;
 
+    public int resourceAmount = 0;
+
     private void Awake()
     {
 
-        // Singleton pattern
+        
         if (instance != null && instance != this)
         {
-            Destroy(gameObject); // Only one instance allowed
+            Destroy(gameObject); 
             return;
         }
 
         instance = this;
-        DontDestroyOnLoad(gameObject); // Makes it persist across scenes
+        DontDestroyOnLoad(gameObject); 
+    }
+
+    private void Update()
+    {
+        if (Recourcetext != null)
+            Recourcetext.text = resourceAmount.ToString();
     }
 }
 

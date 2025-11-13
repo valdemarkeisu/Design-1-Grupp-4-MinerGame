@@ -5,7 +5,7 @@ public class ButtonCode : MonoBehaviour
 {
 
 
-    void LoadNextLevel()
+    public void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;

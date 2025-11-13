@@ -14,7 +14,13 @@ public class resource : MonoBehaviour
 
 
     [SerializeField] public float Value = 1f;
+    public float AcctualValue;
     private GameObject circleAOE;
+
+    public float extraValue;
+    public float Multiplier;
+
+    public float Leaf;
 
     SpriteRenderer spriteRenderer;
     private void Awake()
@@ -23,14 +29,16 @@ public class resource : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         spriteRenderer.sprite = sprite1;
 
-
-
+        extraValue = PlayerStats.instance.baseValue;
+        Multiplier = PlayerStats.instance.resourceMultiplier;
+        ValueCalc();
+        
     }
 
     private void Update()
     {
         SpriteChooser();
-        HealthCalc();
+
     }
 
     private void FixedUpdate()
@@ -48,24 +56,12 @@ public class resource : MonoBehaviour
             DmgReciever();
             if (Health <= 0)
             {
+               
                 Destroy(gameObject);
+                PlayerStats.instance.resourceAmount += Mathf.RoundToInt(AcctualValue);
             }
         }
     }
-
-    void HealthCalc()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            DmgReciever();
-            Debug.Log("Dmg");
-            if (Health <= 0)
-            {
-                Destroy(gameObject);
-            }
-        }
-    }
-
 
     void DmgReciever()
     {
@@ -104,7 +100,10 @@ public class resource : MonoBehaviour
         return percentage;
     }
 
-
+    void ValueCalc()
+    {
+        AcctualValue = (Value + extraValue) * Multiplier;
+    }
 
 
 

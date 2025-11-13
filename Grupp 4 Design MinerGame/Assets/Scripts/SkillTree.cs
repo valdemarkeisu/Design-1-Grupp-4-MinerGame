@@ -54,7 +54,7 @@ public class SkillTree : MonoBehaviour
         "Iron start spawning are worth 20",
         "Crystal start spawning are worth 100 leafes",
         "Base recource spawn amount += 2",
-        "Recource/3sec += 1",
+        "SpawnTimerReduce -= 1",
         "On break spawn recource +=1",
         "Base dmg += 5",
         "Time += 1",
@@ -125,7 +125,7 @@ public class SkillTree : MonoBehaviour
                 stats.baseDamage += 5;
                 break;
             case 8: // Time
-                stats.spawnInterval += 1f;
+                stats.spawnInterval -= 1f;
                 break;
             case 9: // Resource multi
                 stats.resourceMultiplier *= 1.5f;
